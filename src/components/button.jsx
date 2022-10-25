@@ -13,7 +13,7 @@ const Button = () => {
         <a href="https://books.zuri.team/design-rules" id="book__design" className="bg-[#EAECF0] hover:bg-[#D0D5DD] px-8 py-6 text-sm md:text-lg font-medium text-[#101828] rounded-lg border-solid text-center">Design Books</a>
       </div>
 
-      <div className="hidden md:flex mt-4">
+      <div className="hidden md:flex mt-6">
         <div className='mx-auto flex'>
           <img src={slackIcon} className="mr-4" alt='Slack Icon'></img>
           <FaGithub size={25}/>

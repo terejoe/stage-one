@@ -15,7 +15,7 @@ const Profile = () => {
                     </div>
                 </div>
 
-                <div className='absolute top-0 left-[904px] mt-3 hidden md:flex'>
+                <div className='absolute top-0 left-[68%] mt-3 hidden md:flex'>
                     <button><img className="inline mt-2 w-10 h-10" src={shareButton} alt="Avatar Share Button"></img></button>
                 </div>
 
