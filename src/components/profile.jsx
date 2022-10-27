@@ -13,7 +13,7 @@ const Profile = () => {
                 
                     <div className='mt-4'>
                         <h2 className='text-xl font-bold text-[#101828]' id="twitter">tere__joe</h2>
-                        <h2 className='text-xl font-bold text-[#101828] mt-2 hidden' id="slack">Tere-joe</h2>
+                        <h2 className='text-xl font-bold text-[#101828] mt-2 hidden' id="slack">Terejoe</h2>
                     </div>
                 </div>
 
