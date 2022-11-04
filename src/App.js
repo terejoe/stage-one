@@ -1,13 +1,18 @@
-import Navbar from "./components/profile";
 import Button from "./components/button";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
-
+import {Routes, Route} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Button/>
+      <div className="content">
+        <Routes>
+          <Route exact path="/" element={<Button/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+        
+      </div>
       <Footer/>
     </div>
   );
