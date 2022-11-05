@@ -12,11 +12,18 @@ const Contact = () => {
     const handleChange =(e) =>{
         e.preventDefault();
         msgValue === "" ? setError(true): setError(false)
-        setLastName("")
-        setFirstName("")
-        setEmail("")
-        setMsgValue("")
-       
+        handleValidation();
+    }
+
+    const handleValidation =() =>{
+
+        if(msgValue !== ""){
+            setLastName("")
+            setFirstName("")
+            setEmail("")
+            setMsgValue("")
+            // console.log("value of first name: ", firstName)
+        }
     }
 
 
@@ -53,7 +60,7 @@ const Contact = () => {
                     </div>
                     <div className="form-group mb-6">
                         <label for="text" className="font-medium text-sm text-[#344054]">Message</label>
-                        <textarea className={error ? "focus:border-red-500 form-control w-full p-2 text-base font-normal text-[#101828] placeholder:text-[#667085] border border-solid border-[#D0D5DD] rounded-lg focus:outline-none focus:shadow-[0px_0px_0px_4px_#F69697]"  : "form-control w-full p-2 text-base font-normal text-[#101828] placeholder:text-[#667085] border border-solid border-[#D0D5DD] rounded-lg focus:border-blue-600 focus:outline-none focus:shadow-[0px_0px_0px_4px_#D1E9FF]"} rows="4"id="message" placeholder="Send me a message and I'll reply you as soon as possible.." value={msgValue} onChange={(e) =>setMsgValue(e.target.value)}/>
+                        <textarea id="message" className={error ? "focus:border-red-500 form-control w-full p-2 text-base font-normal text-[#101828] placeholder:text-[#667085] border border-solid border-[#D0D5DD] rounded-lg focus:outline-none focus:shadow-[0px_0px_0px_4px_#F69697]"  : "form-control w-full p-2 text-base font-normal text-[#101828] placeholder:text-[#667085] border border-solid border-[#D0D5DD] rounded-lg focus:border-blue-600 focus:outline-none focus:shadow-[0px_0px_0px_4px_#D1E9FF]"} rows="4" placeholder="Send me a message and I'll reply you as soon as possible.." value={msgValue} onChange={(e) =>setMsgValue(e.target.value)}/>
                         <p className={error ? "mb-3 text-normal text-red-500" : "hidden"}>Please enter a message</p>
 
                     </div>
